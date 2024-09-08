@@ -1,0 +1,104 @@
+/* General Body Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+/* Video Background */
+#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100; /* Keep the video behind other elements */
+}
+
+/* Main container styling */
+.container {
+  position: relative; /* Ensure container is above video */
+  z-index: 10; /* Higher z-index than video */
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black for readability */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 600px;
+  width: 90%; /* Responsive width */
+  margin: auto; /* Center in the viewport */
+}
+
+/* Styling headings, paragraphs and div containers for better visual appeal */
+h1, h2, #quoteDisplay, #authorDisplay, #searchResults {
+  margin-bottom: 10px;
+}
+
+/* Quote Display Styling */
+#quoteDisplay {
+  font-size: medium;
+  font-style: italic;
+  color: #25e25a; /* Adjusted color for visibility */
+}
+
+#authorDisplay {
+  font-size: 1.2em;
+  color: #f3f732; /* Light blue for authors */
+}
+
+/* Button Styling */
+button {
+  background-color: #28a745; /* Green color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Input Styling */
+input[type="text"] {
+  padding: 10px;
+  margin-top: 20px;
+  width: calc(100% - 24px);
+  border: none;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]:focus {
+  border-color: #28a745;
+}
+
+/* Media Query adjustments for Mobile */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+  h1, h2 {
+    font-size: 1.5em;
+  }
+  #quoteDisplay, #authorDisplay {
+    font-size: 1.1em;
+  }
+  button, input[type="text"] {
+    font-size: 0.9em;
+  }
+}

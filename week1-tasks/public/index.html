@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the Day</title>
+   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+    <source src="nature_background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <h1>Quote of the Day</h1>
+        <div id="quoteContainer">
+            <div id="quoteDisplay">Loading...</div>
+            <div id="authorDisplay"></div>
+            <button id="newQuoteButton">Get New Quote</button>
+        </div>
+
+        <h2>Search Quotes by Author</h2>
+        <input type="text" id="authorSearch" placeholder="Enter author name">
+        <button id="searchButton">Search</button>
+        <div id="searchResults"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
