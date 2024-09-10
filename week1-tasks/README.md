@@ -25,31 +25,28 @@ The "Quote of the Day" website is a simple yet engaging web application designed
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/Techplement.git
+   ```
 Navigate to the Project Folder:
-bash
-Copy code
 cd Techplement/week1-tasks
 
 Install Dependencies:
-,bash
-,Copy code
-,npm install
-,Run the Server:
-bash
-,Copy code
-,node server.js
 
-
-FOR BACKEND
+### FOR BACKEND
+```
 mkdir backend
 cd backend
 npm init -y
+```
 
-INSTALLING DEPENDENCIRES 
+### INSTALLING DEPENDENCIRES 
+```
 npm install express mongoose bcryptjs jsonwebtoken
+```
 
-STARTING THE SERVER
+### STARTING THE SERVER
+```
 node server.js
+```
 
 Developed by-
 Harshita Singh
