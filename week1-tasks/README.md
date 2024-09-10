@@ -39,5 +39,17 @@ bash
 ,Copy code
 ,node server.js
 
+
+FOR BACKEND
+mkdir backend
+cd backend
+npm init -y
+
+INSTALLING DEPENDENCIRES 
+npm install express mongoose bcryptjs jsonwebtoken
+
+STARTING THE SERVER
+node server.js
+
 Developed by-
 Harshita Singh
