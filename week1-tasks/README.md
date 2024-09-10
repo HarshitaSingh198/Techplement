@@ -29,18 +29,13 @@ The "Quote of the Day" website is a simple yet engaging web application designed
 Navigate to the Project Folder:
 cd Techplement/week1-tasks
 
-Install Dependencies:
+Install Dependencies
 
 ### FOR BACKEND
 ```
 mkdir backend
 cd backend
 npm init -y
-```
-
-### INSTALLING DEPENDENCIRES 
-```
-npm install express mongoose bcryptjs jsonwebtoken
 ```
 
 ### STARTING THE SERVER
